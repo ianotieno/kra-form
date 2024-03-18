@@ -1,0 +1,14 @@
+<ng-container [formGroup]="form">
+    <mat-label style="font-size: medium">{{label}}</mat-label>
+    <ol>
+      <li *ngFor="let input of inputs">
+        <app-text
+          [form]="form"
+          [name]="input.name"
+          [label]="input.label"
+          [placeHolder]="input.placeHolder"
+        ></app-text>
+      </li>
+    </ol>
+  </ng-container>
+  

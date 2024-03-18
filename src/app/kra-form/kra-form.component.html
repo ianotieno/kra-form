@@ -1,0 +1,25 @@
+<div class="form-container masonry-container">
+    <form [formGroup]="profileForm" class="masonry">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Kra</mat-card-title>
+        </mat-card-header>
+    
+        <div class="masonry-grid">
+          <app-inputs
+            *ngFor="let content of formContents"
+            [form]="profileForm"
+            [formContent]="content"
+          ></app-inputs>
+        </div>
+      
+        
+        <mat-card-actions>
+          <button (click)="saveForm()" mat-raised-button color="primary">
+            Save
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+  

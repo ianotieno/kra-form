@@ -1,0 +1,14 @@
+<ng-container [formGroup]="form">
+    <mat-label style="font-size: medium">{{label}}</mat-label>
+    <ol>
+      
+        <app-select-content
+          [form]="form"
+          [name]="name"
+          [label]="label"
+          [placeHolder]="placeHolder"
+        ></app-select-content>
+     
+    </ol>
+  </ng-container>
+  

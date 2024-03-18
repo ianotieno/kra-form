@@ -1,0 +1,24 @@
+<div class="full-width">
+    <app-text
+      *ngIf="formContent['type'] === 'text'"
+      [form]="form"
+      [placeHolder]="formContent['placeHolder']"
+      [name]="formContent['name']"
+      [label]="formContent['label']"
+    ></app-text>
+    <app-grouped-inputs
+      *ngIf="formContent['type'] === 'groupedInputs'"
+      [form]="form"
+      [name]="formContent['name']"
+      [label]="formContent['label']"
+      [inputs]="formContent['inputs']"
+    ></app-grouped-inputs>
+    <app-select-content
+    *ngIf="formContent['type'] === 'select'"
+    [form]="form"
+    [name]="formContent['name']"
+    [label]="formContent['label']"
+    [placeHolder]="formContent['placeholder']">
+
+    </app-select-content>
+</div>
