@@ -18,7 +18,15 @@
     [form]="form"
     [name]="formContent['name']"
     [label]="formContent['label']"
-    [placeHolder]="formContent['placeholder']">
-
+    [placeHolder]="formContent['placeholder']"
+    [options]="formContent['options']"
+    >
     </app-select-content>
+    <app-date
+    *ngIf="formContent['type'] === 'date'"
+    [form]="form"
+    [name]="formContent['name']"
+    [label]="formContent['label']"
+    [hint]="formContent['hint']"
+></app-date>
 </div>

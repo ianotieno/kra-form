@@ -4,4 +4,5 @@ export interface GroupedInputsContent {
   type: string;
   name?: string;
   inputs: TextContent[];
+  hint?: string;
 }

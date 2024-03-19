@@ -1,14 +1,7 @@
 <ng-container [formGroup]="form">
     <mat-label style="font-size: medium">{{label}}</mat-label>
-    <ol>
-      
-        <app-select-content
-          [form]="form"
-          [name]="name"
-          [label]="label"
-          [placeHolder]="placeHolder"
-        ></app-select-content>
-     
-    </ol>
+  <mat-select>
+    <mat-option *ngFor="let option of options" [value]="option.code">{{option.codeDescription}}</mat-option>
+  </mat-select>
   </ng-container>
   

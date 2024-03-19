@@ -11,7 +11,7 @@ export class SelectContentComponent {
   @Input() label!: string;
   @Input() name!: string;
   @Input() placeHolder!: string;
-  
+  @Input() options!:any
 
 
 }

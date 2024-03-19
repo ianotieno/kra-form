@@ -24,6 +24,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { SelectContentComponent } from './Form/inputs/select-content/select-content.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -53,6 +54,7 @@ import { SelectContentComponent } from './Form/inputs/select-content/select-cont
     MatNativeDateModule,
     MatToolbarModule,
     MatIconModule,
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration(),
